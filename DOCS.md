@@ -4,9 +4,9 @@ This document will tell you how your M# code should be created.
 This language is in early development!
 
 # Table of contents
-1. [Pre-defined functions](#pre-defined-functions)
-2. [Custom Variables](#custom-variables-beta)
-3. [Custom Functions](#custom-functions-beta)
+- [Pre-defined functions](#pre-defined-functions)
+- [Custom Variables](#custom-variables-beta)
+- [Custom Functions](#custom-functions-beta)
 
 ## Pre-defined functions
 `Reset` - Attempts to restart code execution **`THIS IS DANGEROUS!`**
