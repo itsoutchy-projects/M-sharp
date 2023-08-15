@@ -8,13 +8,19 @@ namespace My_most_complex_interpreted_language_yet
 {
     internal class Program
     {
-        public static bool inFunctionDefinition = false;
-        public static Dictionary<string, string> functions = new Dictionary<string, string>();
-        public static Dictionary<string, object> variables = new Dictionary<string, object>();
+        public static bool inFunctionDefinition = false; // We use this to make sure we don't run any functions as they're being defined, but rather when called
+        public static Dictionary<string, string> functions = new Dictionary<string, string>(); // All the custom functions which were defined; We store this in a dictionary so they can easilly be run
+        public static Dictionary<string, object> variables = new Dictionary<string, object>(); // All the variables defined in the code
         //public static Function<string>[] preDefinedFunctionsTypeString =
         //{
         //    new Function<string>("Write", new Action<string>((string input) => Console.Write(input)), variables)
+        //    // This would be used for functions with parameters, however I faced quite a few difficulties, they were planned to be seperated by ",", and before the first parameter we put "<="
+        //    // Meaning a full function call would go like this:
+        //    //    name <= "param1"
         //};
+        /// <summary>
+        /// All the pre-defined functions go in here
+        /// </summary>
         public static Function[] preDefinedFunctions =
         {
             new Function("Reset", new Action(() => runCode(path))),
@@ -58,6 +64,10 @@ namespace My_most_complex_interpreted_language_yet
             }
         }
 
+        /// <summary>
+        /// Runs a full M# script
+        /// </summary>
+        /// <param name="filePath">The path to the script</param>
         public static void runCode(string filePath)
         {
             string code = File.ReadAllText(filePath);
@@ -81,6 +91,11 @@ namespace My_most_complex_interpreted_language_yet
             }
         }
 
+        /// <summary>
+        /// Runs a single line of code
+        /// </summary>
+        /// <param name="line">The line to run</param>
+        /// <param name="index">The current index of iteration through code</param>
         public static void runLine(string line, int index)
         {
             string[] lines = line.Split("\n");
@@ -163,6 +178,9 @@ namespace My_most_complex_interpreted_language_yet
         }
     }
 
+    /// <summary>
+    /// We put all extension methods here, to be used in the <see cref="Program"/> class
+    /// </summary>
     public static class extensionMethods
     {
         /// <summary>
