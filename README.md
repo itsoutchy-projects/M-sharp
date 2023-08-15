@@ -1,7 +1,8 @@
 ﻿# M#
 M# is a language which intends to be a starting point for new programmers looking for a text-based language. It is interpreted, however, it's open source! Meaning you can modify it to how you wish!
 
-For documentation see [this](DOCS.md)
+For documentation see [this](DOCS.md)  
+For source code info see [this](Info.md)
 
 ## How can I use this?
 There will be a compiled version shortly, but if you really want to use it now, then follow these steps:

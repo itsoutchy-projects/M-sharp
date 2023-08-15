@@ -18,7 +18,8 @@ This language is in early development!
 To declare a variable, simply use the `var` keyword, followed by the name of it, then ` = ` followed by the value
 
 ## Custom Functions `BETA`
-When creating a function, you must put the `function` keyword, then at the end of the function, you must put the `end` keyword
+When creating a function, you must put the `function` keyword, then at the end of the function, you must put the `end` keyword  
+The function must be placed **before** any calls
 
 ## Commenting code
 Simply put `//` at the start to make the interpreter ignore it
