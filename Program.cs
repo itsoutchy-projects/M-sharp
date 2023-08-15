@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows;
 using System.Xml.Linq;
+using System.Threading;
 
 namespace My_most_complex_interpreted_language_yet
 {
@@ -176,6 +177,15 @@ namespace My_most_complex_interpreted_language_yet
         {
             msg = txt;
             colour = color;
+        }
+
+        /// <summary>
+        /// Converts <paramref name="s"/> to a <see cref="ConsoleLine"/>
+        /// </summary>
+        /// <param name="s"></param>
+        public static implicit operator ConsoleLine(string s)
+        {
+            return new ConsoleLine(s, ConsoleColor.White);
         }
     }
 
