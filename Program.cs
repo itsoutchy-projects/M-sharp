@@ -94,10 +94,11 @@ namespace My_most_complex_interpreted_language_yet
         /// <summary>
         /// Runs a single line of code
         /// </summary>
-        /// <param name="line">The line to run</param>
+        /// <param name="Theline">The line to run</param>
         /// <param name="index">The current index of iteration through code</param>
-        public static void runLine(string line, int index)
+        public static void runLine(string Theline, int index)
         {
+            string line = Theline.Trim(); // This allows for indentation, meaning your code can be organised and more readable
             string[] lines = line.Split("\n");
             if (!line.StartsWith("//") && !inFunctionDefinition)
             {

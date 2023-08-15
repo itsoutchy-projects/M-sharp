@@ -18,5 +18,10 @@ There will be a compiled version shortly, but if you really want to use it now, 
 Q: Why does it print text when variables and functions get created?  
 A: To help with debugging, so it's easier to find the source of any problems.
 
-Q: How come indentation might not be possible?  
-A: Indentation is made of spaces, which will likely make the interpreter think that the line is improper (doesn't start with a keyword or run a valid function)
+Q: What's with the low amount of things possible?
+A: This language was started just recently, meaning I wouldn't have time to implement lots of functions.
+
+## TODO
+[x] Add indentation support
+[ ] Fix problems with functions
+[ ] Add support for functions with parameters

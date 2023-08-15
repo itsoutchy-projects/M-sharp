@@ -1,12 +1,12 @@
 ﻿// testing custom function definitions
 var cool = lol
 function loop
-HelloWorld
-HelloWorld
-HelloWorld
-HelloWorld
-HelloWorld
-HelloWorld
+	HelloWorld
+	HelloWorld
+	HelloWorld
+	HelloWorld
+	HelloWorld
+	HelloWorld
 end
 
 loop
