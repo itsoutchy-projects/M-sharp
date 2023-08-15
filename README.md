@@ -22,6 +22,6 @@ Q: What's with the low amount of things possible?
 A: This language was started just recently, meaning I wouldn't have time to implement lots of functions.
 
 ## TODO
-[x] Add indentation support
-[ ] Fix problems with functions
-[ ] Add support for functions with parameters
+- [x] Add indentation support  
+- [ ] Fix problems with functions  
+- [ ] Add support for functions with parameters  
