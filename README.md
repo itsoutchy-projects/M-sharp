@@ -24,4 +24,7 @@ A: This language was started just recently, meaning I wouldn't have time to impl
 ## TODO
 - [x] Add indentation support  
 - [ ] Fix problems with functions  
+    - [ ] Add support for reading and writing to files
+    - [ ] Add support for running functions as an input for another function
+    - [ ] Add support for functions with outputs
 - [ ] Add support for functions with parameters  
