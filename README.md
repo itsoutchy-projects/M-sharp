@@ -5,7 +5,7 @@ For documentation see [this](DOCS.md)
 For source code info see [this](Info.md)
 
 ## How can I use this?
-There will be a compiled version shortly, but if you really want to use it now, then follow these steps:
+To compile for yourself, follow these steps:
 1. Fork the repository and copy its url
 2. If you haven't already, [download git](https://git-scm.com/)
 3. Have [Visual Studio](https://visualstudio.microsoft.com/vs) installed
